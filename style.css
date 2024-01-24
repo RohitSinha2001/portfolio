@@ -597,7 +597,7 @@ nav li {
 .miniproject {
   text-align: center;
   text-decoration: none;
-  flex: 0 0 30%; /* Adjust the width of each mini-project item */
+   /* Adjust the width of each mini-project item */
   margin: 10px; /* Add some margin between items */
 }
 
@@ -618,6 +618,80 @@ nav li {
 
 /* Add mobile responsiveness using media queries */
 
+
+
+
+
+
+/* Add this CSS to your existing styles */
+.miniprojects {
+  text-align: center;
+}
+
+
+
+.miniproject {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.miniproject i {
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  font-size: 35px;
+}
+#downloadResume {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px; /* Adjust the margin as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; /* Center the button horizontally */
+  font-family: cursive;
+ 
+}
+
+
+#downloadResume:hover {
+  background-color: darkslategray;
+}
+#skills li img:hover {
+  transform: scale(1.1) rotate(360deg); /* Added rotation on hover */
+  background-color: #e74c3c;
+}
+.miniproject p{
+  font-size: 10px;
+}
+.miniproject h3{
+  font-size: 12px;
+
+}
+.miniproject h6{
+  font-size: 8px;
+
+}
+.miniproject:hover{
+  transform: scale(1.1) rotate(360deg);
+}
+.project-card:hover{
+  transform: scale(1.1) rotate(360deg);
+}
+button:hover {
+  transform: scale(1.1) rotate(360deg);
+}
+nav li:hover{
+  transform: scale(1.1) rotate(360deg);
+}
 @media only screen and (max-width: 600px) {
   header {
     flex-direction: column;
@@ -724,14 +798,21 @@ nav li {
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
-    flex: 0 0 45%; /* Adjust the width of each mini-project item for smaller screens */
+    margin: 0;
+    /* Adjust the width of each mini-project item for smaller screens */
   }
 
   .miniproject i {
     width: 8px;
     height: 8px;
-    margin: 5px;
-    font-size: 18px;
+    margin: 0;
+    font-size: 20px;
+  }
+  .miniproject h3{
+    font-size: 6px;
+  }
+  .miniproject h6 {
+    font-size: 5px;
   }
 
   #skills ul {
@@ -744,7 +825,7 @@ nav li {
   }
 
   .resume-section {
-    padding: 10px;
+    padding: 0;
     max-width: 100%; /* Make sure the section doesn't exceed the screen width */
     box-sizing: border-box; /* Ensure padding is included in the width */
     margin: 0; /* Remove any default margin */
@@ -758,77 +839,12 @@ nav li {
     width: calc(50% - 20px);
     margin: 5px;
   }
-}
+  .skills-list li{
+    margin: 0;
+  }
+  .resume-section .skills-list img {
+    margin: 0;
+  }
 
 
-
-
-/* Add this CSS to your existing styles */
-.miniprojects {
-  text-align: center;
-}
-
-
-
-.miniproject {
-  display: inline-block;
-  margin: 10px;
-  text-align: center;
-  font-size: 20px;
-}
-
-.miniproject i {
-  width: 15px;
-  height: 15px;
-  margin: 5px;
-  font-size: 35px;
-}
-#downloadResume {
-  background-color: black;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 20px; /* Adjust the margin as needed */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto; /* Center the button horizontally */
-  font-family: cursive;
- 
-}
-
-
-#downloadResume:hover {
-  background-color: darkslategray;
-}
-#skills li img:hover {
-  transform: scale(1.1) rotate(360deg); /* Added rotation on hover */
-  background-color: #e74c3c;
-}
-.miniproject p{
-  font-size: 10px;
-}
-.miniproject h3{
-  font-size: 12px;
-
-}
-.miniproject h6{
-  font-size: 8px;
-
-}
-.miniproject:hover{
-  transform: scale(1.1) rotate(360deg);
-}
-.project-card:hover{
-  transform: scale(1.1) rotate(360deg);
-}
-button:hover {
-  transform: scale(1.1) rotate(360deg);
-}
-nav li:hover{
-  transform: scale(1.1) rotate(360deg);
 }
