@@ -1,6 +1,6 @@
 document.getElementById('downloadResume').addEventListener('click', function() {
     // Replace 'your_resume_filename.pdf' with the actual filename of your resume
-    var resumeUrl = 'file:///C:/rohit/rohit/rohitsinharoy.pdf';
+    var resumeUrl = './path/to/your/Rohit_Sinha_Resume.pdf';
 
     // Create an anchor element
     var downloadLink = document.createElement('a');
