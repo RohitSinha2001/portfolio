@@ -585,7 +585,7 @@ nav li {
 }
 /* Add this to your existing CSS or create a new style.css file */
 /* Add this to your existing CSS or create a new style.css file */
-.miniprojects {
+.miniproject {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -614,8 +614,9 @@ nav li {
   margin-top: 10px;
   font-size: 14px;
 }
-
 /* ... (your existing styles) ... */
+
+/* Add mobile responsiveness using media queries */
 
 @media only screen and (max-width: 600px) {
   header {
@@ -709,4 +710,27 @@ nav li {
     height: 20px;
     margin: 5px;
   }
+}
+
+
+
+
+/* Add this CSS to your existing styles */
+.miniprojects {
+  text-align: center;
+}
+
+
+
+.miniproject {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+.miniproject i {
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  font-size: 36px;
 }
