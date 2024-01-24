@@ -804,3 +804,7 @@ nav li {
 #downloadResume:hover {
   background-color: darkslategray;
 }
+#skills li img:hover {
+  transform: scale(1.1) rotate(360deg); /* Added rotation on hover */
+  background-color: #e74c3c;
+}
