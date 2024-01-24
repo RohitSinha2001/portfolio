@@ -852,6 +852,9 @@ nav li:hover{
     margin-top: 5px;
     font-size: 6px;
   }
+  .project-card p{
+    font-size: 15px;
+  }
 
 
 }
