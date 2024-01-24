@@ -692,6 +692,7 @@ button:hover {
 nav li:hover{
   transform: scale(1.1) rotate(360deg);
 }
+
 @media only screen and (max-width: 600px) {
   header {
     flex-direction: column;
@@ -843,9 +844,9 @@ nav li:hover{
     margin: 0;
   }
   .resume-section .skills-list img {
-    height: 25px;
-    width: 25px;
-    margin: 0;
+    height: 35px;
+    width: 35px;
+    margin:5px;
   }
   .resume-section .skills-list p{
     margin-top: 5px;
