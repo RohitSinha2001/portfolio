@@ -683,6 +683,19 @@ nav li {
     height: 60px;
     margin: 5px;
   }
+  .profiles-header {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav li {
+    margin: 0 15px;
+  }
+}
 }
 
 
