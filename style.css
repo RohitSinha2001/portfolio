@@ -843,6 +843,8 @@ nav li:hover{
     margin: 0;
   }
   .resume-section .skills-list img {
+    height: 35px;
+    width: 35px;
     margin: 0;
   }
 
