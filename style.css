@@ -769,7 +769,7 @@ nav li:hover{
   }
 
   .contact-info p {
-    margin-right: 10px;
+    margin-right: 20px;
     margin-bottom: 0;
   }
 
@@ -844,8 +844,8 @@ nav li:hover{
     margin: 0;
   }
   .resume-section .skills-list img {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     margin:5px;
   }
   .resume-section .skills-list p{
