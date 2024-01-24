@@ -774,13 +774,14 @@ nav li {
   display: inline-block;
   margin: 10px;
   text-align: center;
+  font-size: 20px;
 }
 
 .miniproject i {
   width: 15px;
   height: 15px;
   margin: 5px;
-  font-size: 36px;
+  font-size: 35px;
 }
 #downloadResume {
   background-color: black;
@@ -807,4 +808,27 @@ nav li {
 #skills li img:hover {
   transform: scale(1.1) rotate(360deg); /* Added rotation on hover */
   background-color: #e74c3c;
+}
+.miniproject p{
+  font-size: 10px;
+}
+.miniproject h3{
+  font-size: 12px;
+
+}
+.miniproject h6{
+  font-size: 8px;
+
+}
+.miniproject:hover{
+  transform: scale(1.1) rotate(360deg);
+}
+.project-card:hover{
+  transform: scale(1.1) rotate(360deg);
+}
+button:hover {
+  transform: scale(1.1) rotate(360deg);
+}
+nav li:hover{
+  transform: scale(1.1) rotate(360deg);
 }
