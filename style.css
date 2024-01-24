@@ -617,7 +617,6 @@ nav li {
 /* ... (your existing styles) ... */
 
 /* Add mobile responsiveness using media queries */
-
 @media only screen and (max-width: 600px) {
   header {
     flex-direction: column;
@@ -665,6 +664,7 @@ nav li {
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
+    flex: 0 0 45%; /* Adjust the width of each mini-project item for small screens */
   }
 
   .miniproject i {
@@ -688,19 +688,19 @@ nav li {
   }
 
   .contact-info {
-    flex-direction: row;
+    flex-direction: column; /* Adjust the layout for small screens */
     justify-content: center;
     padding: 20px;
   }
 
   .contact-info p {
-    margin-right: 20px;
-    margin-bottom: 0;
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add some bottom margin */
   }
 
   .profiles-header {
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column; /* Adjust the layout for small screens */
+    justify-content: center;
     align-items: center;
     margin-top: 10px;
   }
@@ -710,7 +710,13 @@ nav li {
     height: 20px;
     margin: 5px;
   }
+
+  .resume-section {
+    max-width: 100%; /* Ensure the resume section doesn't go outside the screen */
+    margin: 10px; /* Add margin for spacing */
+  }
 }
+
 
 
 
