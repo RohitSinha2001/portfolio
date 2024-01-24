@@ -1,35 +1,22 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const body = document.body;
-  const darkModeToggle = document.getElementById('dark-mode-toggle');
+document.getElementById('downloadResume').addEventListener('click', function() {
+    // Replace 'your_resume_filename.pdf' with the actual filename of your resume
+    var resumeUrl = './path/to/your/Rohit_Sinha_Resume.pdf';
 
-  // Check if the user's dark mode preference is stored
-  const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+    // Create an anchor element
+    var downloadLink = document.createElement('a');
 
-  // Set initial dark mode state
-  if (isDarkMode) {
-      enableDarkMode();
-  } else {
-      disableDarkMode();
-  }
+    // Set the download link's href to the resume URL
+    downloadLink.href = resumeUrl;
 
-  // Toggle dark mode when the toggle button is clicked
-  darkModeToggle.addEventListener('click', () => {
-      if (body.classList.contains('dark-mode')) {
-          disableDarkMode();
-      } else {
-          enableDarkMode();
-      }
-  });
+    // Set the download attribute with the desired filename
+    downloadLink.download = 'Rohit_Sinha_Resume.pdf';
 
-  // Function to enable dark mode
-  function enableDarkMode() {
-      body.classList.add('dark-mode');
-      localStorage.setItem('darkMode', 'enabled');
-  }
+    // Append the link to the document
+    document.body.appendChild(downloadLink);
 
-  // Function to disable dark mode
-  function disableDarkMode() {
-      body.classList.remove('dark-mode');
-      localStorage.setItem('darkMode', null);
-  }
+    // Trigger a click on the link to start the download
+    downloadLink.click();
+
+    // Remove the link from the document after the download
+    document.body.removeChild(downloadLink);
 });
