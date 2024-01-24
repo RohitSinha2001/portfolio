@@ -745,11 +745,9 @@ nav li {
 
   .resume-section {
     padding: 10px;
-    width: 5px;
-    height: 5px;/* Make sure the section doesn't exceed the screen width */
+    max-width: 100%; /* Make sure the section doesn't exceed the screen width */
     box-sizing: border-box; /* Ensure padding is included in the width */
     margin: 0; /* Remove any default margin */
-    display: grid;
   }
 
   .resume-section .section-title {
