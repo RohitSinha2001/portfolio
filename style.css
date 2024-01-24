@@ -617,23 +617,18 @@ nav li {
 
 /* ... (your existing styles) ... */
 
-/* Add mobile responsiveness using media queries */
-/* ... (your existing styles) ... */
-
-/* Add mobile responsiveness using media queries */
-
 @media only screen and (max-width: 600px) {
   header {
     flex-direction: column;
   }
 
   .logo img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
 
   .signature h1 {
-    font-size: 1.5em;
+    font-size: 3em;
   }
 
   nav ul {
@@ -665,13 +660,16 @@ nav li {
   }
 
   .miniproject {
-    text-align: center;
-    text-decoration: none;
-    flex: 0 0 48%;
-    margin: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
   }
 
   .miniproject i {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
     font-size: 36px;
   }
 
@@ -707,8 +705,8 @@ nav li {
   }
 
   .profile {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     margin: 5px;
   }
 }
