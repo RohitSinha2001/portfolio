@@ -876,3 +876,6 @@ nav li:hover{
   margin: 0;
   
 }
+.contact-info p:hover{
+  transform: scale(1.1) rotate(360deg);
+}
