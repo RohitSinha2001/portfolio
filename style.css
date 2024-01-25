@@ -880,3 +880,22 @@ nav li:hover{
   transform: scale(1.1) rotate(360deg);
   font-weight: 200;
 }
+nav li {
+  position: relative;
+}
+
+nav li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: rgba(117, 3, 27, 0.776);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: width 0.5s;
+}
+
+nav li a:hover::after {
+  width: 100%;
+}
+
